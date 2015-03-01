@@ -1,0 +1,29 @@
+group = 'textrank'
+version = '1.0'
+
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'java'
+
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "http://maven.tmorn.com:8081/content/groups/public/" }
+}
+
+task 'createJavaProject' << {
+    sourceSets*.java.srcDirs*.each { it.mkdirs() }
+    sourceSets*.resources.srcDirs*.each { it.mkdirs()}
+}
+
+sourceCompatibility = "1.8"
+jar {
+    manifest.attributes provider: 'textrank'
+}
+
+dependencies {
+    compile 'org.fnlp:fnlp-core:2.1'
+    compile 'com.google.guava:guava:18.0'
+}

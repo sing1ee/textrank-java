@@ -1,5 +1,24 @@
-.gradle
-build/
-
 # Ignore Gradle GUI config
 gradle-app.setting
+
+# idea IDE
+out
+.idea
+*.iml
+*.ipr
+*.iws
+
+# eclipse IDE
+.classpath
+.project
+.settings
+
+# build
+.gradle
+build
+
+#mac
+.DS_Store
+
+#log
+logs
