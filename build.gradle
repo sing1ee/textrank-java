@@ -24,6 +24,8 @@ jar {
 }
 
 dependencies {
-    compile 'org.fnlp:fnlp-core:2.1'
+//    compile 'org.fnlp:fnlp-core:2.1'
     compile 'com.google.guava:guava:18.0'
+    compile 'com.huaban:jieba-analysis:1.0.0'
+    compile 'edu.stanford.nlp:stanford-corenlp:3.4.1'
 }
