@@ -38,18 +38,5 @@ public abstract class Graph {
 		
 		return nodes.subList(0, Math.min(k, nodes.size()));
 	}
-	
-	public Map<String, Float> printResult() {
-		
-		List<Node> nodes = this.topk(20);
-		Map<String, Float> ranks = Maps.newHashMap();
-		
-		String r = Joiner.on(" ").join(nodes);
-		System.out.println(r);
-		
-		for (Node n : nodes) {
-			ranks.put(n.label, n.rank);
-		}
-		return ranks;
-	}
+
 }

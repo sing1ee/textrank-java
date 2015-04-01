@@ -2,8 +2,8 @@ package textrank.pagerank;
 
 public class Node implements Comparable<Node> {
 
-	String label;
-	float rank;
+	public String label;
+	public float rank;
 	
 	
 	
