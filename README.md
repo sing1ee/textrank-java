@@ -1,8 +1,8 @@
 # textrank-java
 a simple implementation of textrank algorithm for nlp keywords extraction
 
-####Usage
+#### Usage
 see KeywordsExtractor.java
 
-####REQUIRES
+#### REQUIRES
 1. jdk 1.8+
